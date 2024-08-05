@@ -3,7 +3,7 @@ package com.bytebinder.backend.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "user")
+@Table(name = "tb_user")
 public class Users {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

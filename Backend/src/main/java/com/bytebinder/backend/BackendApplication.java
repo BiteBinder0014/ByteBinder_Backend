@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("com.bytebinder.backend.sqlmap")
+@MapperScan("com.bytebinder.backend")
 public class BackendApplication {
 
 	public static void main(String[] args) {
