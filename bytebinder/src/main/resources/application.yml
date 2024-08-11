@@ -4,15 +4,16 @@ spring:
       enabled: true
       path: /h2-console
   datasource:
-    url : jdbc:h2:~/test;
-    driver-class-name: org.h2.Driver
-    username: sa
-    password:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5000/ByteBinderDB
+    username: eunbi
+    password: qwer1234
   jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
+    database: postgresql
+#    database-platform: org.hibernate.dialect.H2Dialect
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.H2Dialect
+#        dialect: org.hibernate.dialect.H2Dialect
         format_sql: true
         show_sql: true
     hibernate:
